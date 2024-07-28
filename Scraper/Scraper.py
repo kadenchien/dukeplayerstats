@@ -39,7 +39,7 @@ current_year = datetime.now().year
 
 # Scrape data for the past 10 years
 all_data = []
-for year in range(current_year, current_year - 10, -1):
+for year in range(current_year, current_year - 50, -1):
     print(f"Scraping data for {year-1}-{year} season...")
     df = scrape_duke_stats(year)
     if df is not None:
